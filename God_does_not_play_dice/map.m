@@ -432,7 +432,7 @@ if 0 == map_state
             plus_feature = zeros(1,9);
             plus_feature(9) = unidrnd(10000);
             character_feature = character_feature+ plus_feature;
-            set(handles.text57,'string','½ğÇ®ÌáÉı£¨<10000£©£¡');
+            set(handles.text57,'string',['Ìø²ÛÕÇĞ½½ğÇ®ÌáÉı:',num2str(plus_feature(9)),'£¨<10000£©£¡']);
             set(handles.text57,'FontSize',18);
             assignin('base','character_feature',character_feature);
             assignin('base','plus_feature',plus_feature);

@@ -79,6 +79,7 @@ function radiobutton1_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 %人物属性随机生成
+rng('shuffle') ;
 character_feature = round(unidrnd(100,[1,9]).*1.5);
 character_feature(5) = character_feature(5)*10;
 assignin('base','character_feature',character_feature);
@@ -113,6 +114,7 @@ function radiobutton2_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 %人物属性随机生成
+rng('shuffle') 
 character_feature = unidrnd(100,[1,9]);
 character_feature(5) = character_feature(5)*10;
 assignin('base','character_feature',character_feature);
@@ -147,6 +149,7 @@ function radiobutton3_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 %人物属性随机生成
+rng('shuffle') 
 character_feature = round(unidrnd(100,[1,9]).*0.5);
 character_feature(5) = character_feature(5)*10;
 assignin('base','character_feature',character_feature);
